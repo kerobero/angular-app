@@ -16,3 +16,8 @@ jobs:
       run: npm install
     - name: Run tests
       run: npm run test:headless
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v3
+      with:
+        name: code-coverage-report
+        path: coverage/angular-app/*
