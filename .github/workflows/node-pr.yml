@@ -36,4 +36,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: kerobero/angular-app:$(date +%s)
+        tags: kerobero/angular-app:latest
