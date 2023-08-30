@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  app:
+    image: kerobero/angular-app:beta
+    ports:
+      - "8080:80"
