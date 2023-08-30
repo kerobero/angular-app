@@ -1,12 +1,11 @@
-name: Node.js CI
+name: Node.js CI on PR
 
 on: [pull_request]
 
 jobs:
-  build:
-
+  unit-tests:
+    name: Unit Tests
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js 16.x
